@@ -14,7 +14,7 @@ const baseUrl = import.meta.env.BASE_URL;
   <nav class="container mx-auto px-5 lg:px-20" x-data="{ mobileMenuOpen: false }">
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-3">
+      <a href={`${baseUrl}/`} class="flex items-center space-x-3">
         <img src={`${baseUrl}/assets/logo-bizot-paysagistes.png`} alt="Bizot Paysagistes Logo" class="h-12 w-auto" loading="lazy">
         <span class="text-xl font-bold text-brandDark hidden sm:inline">Bizot Paysagistes</span>
       </a>

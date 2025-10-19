@@ -309,7 +309,7 @@ const baseUrl = import.meta.env.BASE_URL;
   </section>
 
   <!-- Target Clients Section -->
-  <section class="py-24 relative text-white overflow-hidden target-clients-hero">
+  <section class="py-24 relative text-white overflow-hidden target-clients-hero" style={`background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('${baseUrl}/assets/picture-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;`}>
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
     <div class="container mx-auto px-5 lg:px-20 relative z-10">
       <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
@@ -593,21 +593,12 @@ const baseUrl = import.meta.env.BASE_URL;
 
   <Footer />
   
-  <!-- Counter Animation Script -->
-  <style define:vars={{ bgImage: `${baseUrl}/assets/picture-bg.jpg` }}>
-    .target-clients-hero {
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), 
-                  url(var(--bgImage));
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-    
+  <style is:global>
     /* Responsive background fixes for mobile devices */
     @media (max-width: 767px) {
       .target-clients-hero {
-        background-attachment: scroll;
-        background-position: center;
+        background-attachment: scroll !important;
+        background-position: center !important;
       }
     }
   </style>

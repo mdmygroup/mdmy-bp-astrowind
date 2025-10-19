@@ -7,6 +7,7 @@ const navItems = [
 ];
 
 const currentPath = Astro.url.pathname;
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
@@ -14,7 +15,7 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center space-x-3">
-        <img src="/assets/logo-bizot-paysagistes.png" alt="Bizot Paysagistes Logo" class="h-12 w-auto" loading="lazy">
+        <img src={`${baseUrl}assets/logo-bizot-paysagistes.png`} alt="Bizot Paysagistes Logo" class="h-12 w-auto" loading="lazy">
         <span class="text-xl font-bold text-brandDark hidden sm:inline">Bizot Paysagistes</span>
       </a>
       

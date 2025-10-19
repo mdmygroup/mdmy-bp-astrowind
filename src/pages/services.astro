@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const currentPath = '/services';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout 
@@ -400,8 +401,8 @@ const currentPath = '/services';
           </p>
           <div class="bg-brandLight/40 border-l-4 border-brandDark p-4 rounded mb-8">
             <div class="flex items-start gap-3">
-              <img src="/assets/logo-certificat-de-specialisation-taille-et-soins-aux-arbres.png" 
-                   srcset="/assets/logo-certificat-de-specialisation-taille-et-soins-aux-arbres.png 1x"
+              <img src={`${baseUrl}assets/logo-certificat-de-specialisation-taille-et-soins-aux-arbres.png`}
+                   srcset={`${baseUrl}assets/logo-certificat-de-specialisation-taille-et-soins-aux-arbres.png 1x`}
                    alt="Certification CS Taille et Soins aux Arbres" 
                    class="h-12 opacity-80"
                    loading="lazy">

@@ -23,13 +23,13 @@ const baseUrl = import.meta.env.BASE_URL;
       <div class="hidden md:flex items-center space-x-8">
         {navItems.map(item => (
           <a 
-            href={item.href} 
+            href={`${baseUrl}${item.href}`} 
             class={`text-textColor hover:text-brandDark transition-colors font-medium ${currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) ? 'text-brandDark font-semibold' : ''}`}
           >
             {item.label}
           </a>
         ))}
-        <a href="/contact" class="bg-brandDark text-white px-6 py-2.5 rounded-lg hover:bg-brand transition-colors font-semibold">
+        <a href={`${baseUrl}/contact`} class="bg-brandDark text-white px-6 py-2.5 rounded-lg hover:bg-brand transition-colors font-semibold">
           Contact
         </a>
       </div>

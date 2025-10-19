@@ -7,6 +7,7 @@ export default {
 				brand: '#80ab97',
 				brandLight: '#cbecdd',
 				brandDark: '#386D56',
+				brandDarkDark: '#1f3a2d',
 				accent: '#F97316',
 				bgColor: '#FFFFFF',
 				textColor: '#102611'

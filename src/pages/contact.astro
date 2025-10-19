@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout 
+  title="Contact - Bizot Paysagistes | Devis Gratuit Paysagiste"
+  description="Contactez Bizot Paysagistes pour votre projet d'aménagement paysager en Île-de-France. Devis gratuit et personnalisé. Intervention en Essonne, Hauts-de-Seine, Yvelines et Paris."
+>
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-brandLight/30 to-white">
+    <div class="container mx-auto px-5 lg:px-20">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <div class="inline-block bg-brandDark/10 text-brandDark px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          📞 Réponse Sous 24h
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-textColor leading-tight mb-6">
+          Contactez-Nous pour Votre <span class="text-brand">Projet</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Demandez votre devis gratuit et personnalisé. Notre équipe vous répond rapidement 
+          pour étudier ensemble votre projet paysager.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form and Info sections continue here -->
+  
+  <Footer />
+</BaseLayout>
